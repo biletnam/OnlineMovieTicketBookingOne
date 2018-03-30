@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "965315557714",
+    "firebase_url": "https://myfierbaseproject.firebaseio.com",
+    "project_id": "myfierbaseproject",
+    "storage_bucket": "myfierbaseproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965315557714:android:886aab9cebb6b25f",
+        "android_client_info": {
+          "package_name": "com.k4acreators.cinemaroo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965315557714-vlrgut75e46v7ps5b0lcrj9ireoeetqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.k4acreators.cinemaroo",
+            "certificate_hash": "0655ad0bc9c3a3d33aa5f502cf48deaf9af96ef0"
+          }
+        },
+        {
+          "client_id": "965315557714-jorhvln8at0jbma25gu5ou9nsq7ujo7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMPe3Sw5aZvfZ5MFuBWHr_zsvAyS1Ym_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965315557714-jorhvln8at0jbma25gu5ou9nsq7ujo7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k4acreators.cinemaroo.Views.LoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/thime_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="24dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tf_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text001"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"/>
+
+            <EditText
+                android:id="@+id/tf_pin_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tf_nick_name"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:theme="@style/MyEditTextTheme"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"/>
+
+            <Button
+                android:id="@+id/bt_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tf_pin_number"
+                android:layout_margin="20dp"
+                android:background="@color/thime_color"
+                android:text="Log In"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:theme="@style/MyEditTextTheme"/>
+
+            <TextView
+                android:id="@+id/tv_new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_continue"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/new_user" />
+
+            <TextView
+                android:id="@+id/tv_recover_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_new_user"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/recover_pin" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

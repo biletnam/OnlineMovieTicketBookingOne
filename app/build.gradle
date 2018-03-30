@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    flavorDimensions "minSdkVersion"
+    defaultConfig {
+        applicationId "com.k4acreators.cinemaroo"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    productFlavors {
+
+        // Build variant with minSdk 16 to include Facebook and FirebaseUI libraries.
+        minSdkJellybean {
+            dimension "minSdkVersion"
+            minSdkVersion 16
+        }
+        minSdk {
+            dimension "minSdkVersion"
+            minSdkVersion 14
+        }
+
+
+    }
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:27.0.2'
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.google.android.gms:play-services:11.8.0'
+
+    // RecyclerView
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+
+    //Fierbase
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    compile 'com.google.firebase:firebase-auth:11.8.0'
+    minSdkJellybeanCompile 'com.firebaseui:firebase-ui-auth:3.2.1'
+    compile 'com.android.support:design:26.1.0'
+
+    //date picker
+    compile 'com.wdullaer:materialdatetimepicker:3.5.0'
+
+    //dropdown
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+    compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+}
+apply plugin: 'com.google.gms.google-services'

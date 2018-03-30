@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k4acreators.cinemaroo.Views.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/thime_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/img_logo">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:padding="7dp"
+                android:src="@drawable/booking"
+                android:layout_margin="8dp"
+                android:id="@+id/iv_booking"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BOOKING"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:src="@drawable/movies"
+                android:padding="7dp"
+                android:layout_margin="8dp"
+                android:id="@+id/iv_movies"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MOVIES"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:src="@drawable/profile"
+                android:layout_margin="8dp"
+                android:id="@+id/iv_profile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROFILE"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:src="@drawable/facebook_share"
+                android:layout_margin="8dp"
+                android:id="@+id/iv_fbshare"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FACE BOOK"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

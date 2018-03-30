@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k4acreators.cinemaroo.Views.LoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/thime_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Show Time"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="24dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick Date"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="55dp" />
+
+
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/spinnerShowTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select show time"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:met_floatingLabel="normal" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/spinnerSeatType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select seat type"
+                android:layout_marginBottom="1dp"
+                android:background="@color/white"
+                android:fontFamily="sans-serif"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:met_floatingLabel="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_recover_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_new_user"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:text="Enter number of tickets" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_recover_pin"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/tv_recover_pin"
+                    android:text="Full :"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tf_full_tickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_recover_pin"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:hint="number of tickets"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Half :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tf_half_tickets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:hint="number of tickets"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tf_pin_number"
+                android:layout_margin="20dp"
+                android:background="@color/thime_color"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:theme="@style/MyEditTextTheme"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
